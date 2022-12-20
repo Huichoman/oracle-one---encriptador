@@ -1,0 +1,77 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{    background-image: linear-gradient(to bottom, #000000, #121212, #1e1d1e, #28292a, #333536, #434647, #535859, #646b6b, #7f8888, #9ba6a6, #b8c5c5, #d6e5e5);
+    height: 100vh;    
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.bodyContainer{       
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;        
+}
+
+.title {
+    background-color: transparent;
+    color: #d6e5e5;
+    margin-top: 0;
+}
+
+.aluraLogo {
+    background-image: url(../images/aluralogo.svg);
+    background-size: cover;
+    width: 4vw;
+    height: 4vw;
+    margin-left: 2vw;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 35vw;
+    border-radius: 1em;    
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 35vw;
+    border-radius: 1em;    
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 35vw;
+    background-color: #d6e5e5;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10%;
+    width: 35vw;    
+    margin-top: 2%;
+}
+
+.outputContainer {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 35vw;
+    background-color: #d6e5e5;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
