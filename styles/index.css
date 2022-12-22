@@ -3,7 +3,10 @@ body,html {
     padding: 0;
 }
 
-.mainContainer{    background-image: linear-gradient(to bottom, #000000, #121212, #1e1d1e, #28292a, #333536, #434647, #535859, #646b6b, #7f8888, #9ba6a6, #b8c5c5, #d6e5e5);
+.mainContainer{    
+    /* background-image: linear-gradient(to bottom, #000000, #121212, #1e1d1e, #28292a, #333536, #434647, #535859, #646b6b, #7f8888, #9ba6a6, #b8c5c5, #d6e5e5); */
+    background-image: linear-gradient(to bottom, #000000, #140f11, #1f191d, #28222a, #302c39, #343143, #37364f, #383c5a, #3b3d62, #403d6a, #473c72, #4f3b78);
+    background-image: linear-gradient(to top, #000000, #140f11, #1f191d, #28222a, #302c39, #343143, #37364f, #383c5a, #3b3d62, #403d6a, #473c72, #4f3b78);
     height: 100vh;    
     background-repeat: no-repeat;
     background-size:auto;
@@ -40,6 +43,7 @@ body,html {
 }
 
 .rightContainer {
+   
     display: flex;
     flex-direction: column;
     height: 90%;
@@ -52,10 +56,12 @@ body,html {
     flex-direction: row;
     height: 80%;
     width: 35vw;
-    background-color: #d6e5e5;
+    background-color: #FCF7FF;
     border-radius: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+
 
 .buttonsContainer {
     display: flex;
@@ -66,12 +72,52 @@ body,html {
     margin-top: 2%;
 }
 
+.encryptButton {
+    width: 8vw;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #927fbf92;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.encryptButton:hover, .decryptButton:hover, .copyButton:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    transform: translateY(-2px);
+    box-shadow: rgba(240, 234, 234, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.decryptButton {
+    width: 8vw;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #C4BBF0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.copyButton {
+    width: 8vw;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #C4BBF0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
 .outputContainer {
+    background-image: url("../images/robot.svg");
+    background-position: center;
     display: flex;
     flex-direction: row;
     height: 80%;
     width: 35vw;
-    background-color: #d6e5e5;
+    background-color: #fcf7ffbd;
     border-radius: 1em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
