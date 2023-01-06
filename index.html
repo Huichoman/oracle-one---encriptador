@@ -12,14 +12,19 @@
 			<div class="aluraLogo"></div>
             <div class="bodyContainer">
                 <div class="leftContainer">
-				    <div class="inputContainer"></div>
+				    <div class="inputContainer">
+                        <textarea id="inputTextArea"></textarea>
+                    </div>
+                    <form id="inputForm"></form>
                     <div class="buttonsContainer">
-                        <button class="encryptButton">Encriptar</button>
+                        <button class="encryptButton" onclick="encriptar()">Encriptar</button>
                         <button class="decryptButton">Desencriptar</button>
                     </div>
                 </div>
                 <div class="rightContainer">
-				    <div class="outputContainer"></div>
+				    <div class="outputContainer">
+                        <textarea id="outputTextArea"></textarea>
+                    </div>
                     <div class="buttonsContainer">
                         <button class="copyButton">Copiar</button>                        
                     </div>
