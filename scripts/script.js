@@ -1,7 +1,9 @@
 let inputText = "input";
 let outputText = "output";
 const inputTextElement = document.getElementById("inputTextArea");
-const outputTextElement = document.getElementById("outputTextArea");
+var wrapper = document.getElementsByClassName("text-animation")[0];
+var spans = wrapper.getElementsByTagName("span");
+// const outputTextElement = document.getElementById("outputTextArea");
 
 String.prototype.map = function (func) {
   let stringArray = this.split("");
@@ -40,7 +42,13 @@ function encriptar() {
     return buffer;
   });
 
-  outputTextElement.value = outputText;
+  // outputTextElement.value = outputText;
+  document.getElementsByClassName("text-animation")[0].textContent = outputText;
+  wrapper.style.opacity = "1";
+  wrapper.innerHTML = wrapper.textContent.replace(/./g, "<span>$&</span>");
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].style.animationDelay = i * 80 + "ms";
+  }
 }
 
 function desencriptar() {
@@ -52,5 +60,16 @@ function desencriptar() {
   outputText = outputText.replaceAll("ober", "o");
   outputText = outputText.replaceAll("ufat", "u");
 
-  outputTextElement.value = outputText;
+  document.getElementsByClassName("text-animation")[0].textContent = outputText;
+  wrapper.style.opacity = "1";
+  wrapper.innerHTML = wrapper.textContent.replace(/./g, "<span>$&</span>");
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].style.animationDelay = i * 80 + "ms";
+  }
+}
+
+function copyText() {
+  var text = document.getElementsByClassName("text-animation")[0].textContent;
+  navigator.clipboard.writeText(text);
+  inputTextElement.value = "";
 }

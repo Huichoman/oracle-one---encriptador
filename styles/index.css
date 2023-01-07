@@ -1,6 +1,8 @@
 body,html {
     margin: 0;
     padding: 0;
+    
+    font-family:"Oswald",sans-serif;
 }
 
 .mainContainer{    
@@ -121,3 +123,55 @@ body,html {
     border-radius: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+textarea {
+    background-color: transparent;
+    margin: 3%;
+    border-color: #000000;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.3rem;
+    
+}
+
+.text-animation {
+    color:rgb(84, 79, 79);
+    opacity:0;
+    font-size: 1.3rem;
+    margin: 3%;
+    width: 100%;
+  }
+  .text-animation span {
+    position:relative;
+    top:10px;
+    left:10px;
+    font-size: 1.3rem;
+    font-weight:600;
+    opacity:0;
+    /* text-transform:uppercase; */
+    animation:fade 200ms ease-in-out forwards;
+  }
+  .center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  @keyframes fade {
+    0% {
+      top:10px;
+      left:10px;
+      filter:blur(10px);
+      opacity:0;
+    }
+    50% {
+      filter:blur(5px);
+      opacity:0.9;
+    }
+    100% {
+      top:0px;
+      left:0px;
+      filter:blur(0px);
+      opacity:1;
+    }  
+  }

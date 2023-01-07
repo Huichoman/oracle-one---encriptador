@@ -13,20 +13,23 @@
             <div class="bodyContainer">
                 <div class="leftContainer">
 				    <div class="inputContainer">
-                        <textarea id="inputTextArea"></textarea>
+                        <textarea  id="inputTextArea" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
                     </div>
                     <form id="inputForm"></form>
                     <div class="buttonsContainer">
                         <button class="encryptButton" onclick="encriptar()">Encriptar</button>
-                        <button class="decryptButton">Desencriptar</button>
+                        <button class="decryptButton" onclick="desencriptar()">Desencriptar</button>
                     </div>
                 </div>
                 <div class="rightContainer">
 				    <div class="outputContainer">
-                        <textarea id="outputTextArea"></textarea>
+                        <!-- <textarea  id="outputTextArea"></textarea> -->
+                        <div class="text-animation">
+                            CSS Fade Text Animation.
+                          </div>
                     </div>
                     <div class="buttonsContainer">
-                        <button class="copyButton">Copiar</button>                        
+                        <button class="copyButton" onclick="copyText()">Copiar</button>                        
                     </div>
                 </div>
             </div>            
