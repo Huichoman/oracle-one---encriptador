@@ -129,6 +129,7 @@ textarea {
     margin: 3%;
     border-color: #000000;
     border-radius: 5px;
+    border: none;
     width: 100%;
     font-size: 1.3rem;
     

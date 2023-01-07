@@ -3,6 +3,7 @@ let outputText = "output";
 const inputTextElement = document.getElementById("inputTextArea");
 var wrapper = document.getElementsByClassName("text-animation")[0];
 var spans = wrapper.getElementsByTagName("span");
+var outputContainer = document.getElementById("outputContainer");
 // const outputTextElement = document.getElementById("outputTextArea");
 
 String.prototype.map = function (func) {
@@ -42,6 +43,7 @@ function encriptar() {
     return buffer;
   });
 
+  outputContainer.style.backgroundImage = "none";
   // outputTextElement.value = outputText;
   document.getElementsByClassName("text-animation")[0].textContent = outputText;
   wrapper.style.opacity = "1";
