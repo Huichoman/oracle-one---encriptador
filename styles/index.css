@@ -38,10 +38,12 @@ body,html {
     width: 30%;
     height: 5vh;
     /* margin-left: 2vw; */
-    padding-top: 2vh;     
+    padding-top: 2vh;   
+    padding-left: 2vw;  
 }
 img{
     height: 90%;
+
 }
 
 .leftContainer {
@@ -227,8 +229,8 @@ textarea {
         flex-direction: column;
         justify-content: flex-end;         
         width: 100%;
-        height: 8vw;   
-        padding-top: 2vh;          
+        height: 7vw;   
+        padding-top: 1.8vh;          
     }
 
     img{
@@ -259,7 +261,7 @@ textarea {
         justify-content: space-between;
         height: 30vh;
         width: 100%;
-        margin-bottom: 2vh;
+        margin-bottom: 1.8vh;
         background-color: #FCF7FF;
         border-radius: 1em;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -275,20 +277,20 @@ textarea {
     }
     
     .encryptButton {
-        width: 7rem;
+        width: 8rem;
         height: 3rem;
         font-size: 1.2rem;        
     }
     
     
     .decryptButton {
-        width: 7rem;
+        width: 8rem;
         height: 3rem;
         font-size: 1.1rem;       
     }
     
     .copyButton {
-        width: 7rem;
+        width: 8rem;
         height: 3rem;
         font-size: 1.1rem;        
     }
@@ -303,7 +305,7 @@ textarea {
         flex-direction: row;
         height: 30vh;
         width: 100%;
-        margin-bottom: 2vh;
+        margin-bottom: 0vh;
     }
     
     textarea {
