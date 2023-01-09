@@ -13,12 +13,14 @@
             <div class="bodyContainer">
                 <div class="leftContainer">
 				    <div class="inputContainer">
-                        <textarea  id="inputTextArea" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
+                        <textarea  id="inputTextArea" placeholder="Ingresa el texto que deseas encriptar o desencriptar" onkeyUp="this.value=inputFilter(this.value)"></textarea>
+                        <div class="messageContainer">Sólo minúsculas y sin acentos.</div>
                     </div>
+                    
                     <form id="inputForm"></form>
                     <div class="buttonsContainer">
-                        <button class="encryptButton" onclick="encriptar()">Encriptar</button>
-                        <button class="decryptButton" onclick="desencriptar()">Desencriptar</button>
+                        <button class="encryptButton" onclick="encriptar()" >Encriptar</button>
+                        <button class="decryptButton" onclick="desencriptar()" >Desencriptar</button>
                     </div>
                 </div>
                 <div class="rightContainer">

@@ -18,32 +18,40 @@ String.prototype.map = function (func) {
 
 function encriptar() {
   let buffer = "";
-  inputText = inputTextElement.value;
-  outputText = inputText.map((e) => {
-    switch (e) {
-      case "a":
-        buffer = "ai";
-        break;
-      case "e":
-        buffer = "enter";
-        break;
-      case "i":
-        buffer = "imes";
-        break;
-      case "o":
-        buffer = "ober";
-        break;
-      case "u":
-        buffer = "ufat";
-        break;
-      default:
-        buffer = e;
-        break;
-    }
-    return buffer;
-  });
+  inputText = inputTextElement.value.trim();
+  if (inputText.length <= 0) {
+    wrapper.style.color = "#eb5f08";
+    outputText = "Oops! Ningún mensaje se ha encontrado";
+    outputContainer.style.backgroundImage = "url(../images/robot.svg)";
+  } else {
+    outputText = inputText.map((e) => {
+      switch (e) {
+        case "a":
+          buffer = "ai";
+          break;
+        case "e":
+          buffer = "enter";
+          break;
+        case "i":
+          buffer = "imes";
+          break;
+        case "o":
+          buffer = "ober";
+          break;
+        case "u":
+          buffer = "ufat";
+          break;
+        default:
+          buffer = e;
+          break;
+      }
+      return buffer;
+    });
 
-  outputContainer.style.backgroundImage = "none";
+    wrapper.style.color = "rgb(27, 12, 34)";
+    outputContainer.style.backgroundImage = "none";
+  }
+
   // outputTextElement.value = outputText;
   document.getElementsByClassName("text-animation")[0].textContent = outputText;
   wrapper.style.opacity = "1";
@@ -74,4 +82,14 @@ function copyText() {
   var text = document.getElementsByClassName("text-animation")[0].textContent;
   navigator.clipboard.writeText(text);
   inputTextElement.value = "";
+}
+
+function inputFilter(string) {
+  var out = "";
+
+  var filtro = "abcdefghijklmnñopqrstuvwxyz ";
+
+  for (var i = 0; i < string.length; i++)
+    if (filtro.indexOf(string.charAt(i)) != -1) out += string.charAt(i);
+  return out;
 }
