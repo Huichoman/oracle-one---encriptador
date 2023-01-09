@@ -259,7 +259,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 30vh;
+        height: 29vh;
         width: 100%;
         margin-bottom: 1.8vh;
         background-color: #FCF7FF;
@@ -277,14 +277,14 @@ textarea {
     }
     
     .encryptButton {
-        width: 8rem;
+        width: 8.5rem;
         height: 3rem;
         font-size: 1.2rem;        
     }
     
     
     .decryptButton {
-        width: 8rem;
+        width: 8.5rem;
         height: 3rem;
         font-size: 1.1rem;       
     }
@@ -303,7 +303,7 @@ textarea {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: row;
-        height: 30vh;
+        height: 29vh;
         width: 100%;
         margin-bottom: 0vh;
     }
