@@ -22,7 +22,7 @@ function encriptar() {
   if (inputText.length <= 0) {
     wrapper.style.color = "#eb5f08";
     outputText = "Oops! Ningún mensaje se ha encontrado";
-    outputContainer.style.backgroundImage = "url(../images/robot.svg)";
+    outputContainer.style.backgroundImage = "url('../images/robot.svg')";
   } else {
     outputText = inputText.map((e) => {
       switch (e) {
