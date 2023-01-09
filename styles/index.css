@@ -1,17 +1,21 @@
 body,html {
-    margin: 0;
-    padding: 0;    
+    margin: 0px;
+    padding: 0px;    
     background-color: #000000;
     font-family:"Oswald",sans-serif;
+    height: 100%;
 }
 
 .mainContainer{    
     /* background-image: linear-gradient(to bottom, #000000, #121212, #1e1d1e, #28292a, #333536, #434647, #535859, #646b6b, #7f8888, #9ba6a6, #b8c5c5, #d6e5e5); */
     background-image: linear-gradient(to bottom, #000000, #140f11, #1f191d, #28222a, #302c39, #343143, #37364f, #383c5a, #3b3d62, #403d6a, #473c72, #4f3b78);
     background-image: linear-gradient(to top, #000000, #140f11, #1f191d, #28222a, #302c39, #343143, #37364f, #383c5a, #3b3d62, #403d6a, #473c72, #4f3b78);
-    height: 100vh;    
+    height: 100vh;   
+    width: 100vw; 
+    margin: 0px;
+    padding: 0px; 
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:auto;    
 }
 
 .bodyContainer{       
@@ -31,9 +35,13 @@ body,html {
 .aluraLogo {
     /* background-image: url(../images/aluralogo.svg);
     background-size: cover; */
-    width: 4vw;
-    height: 4vw;
-    margin-left: 2vw;
+    width: 30%;
+    height: 5vh;
+    /* margin-left: 2vw; */
+    padding-top: 2vh;     
+}
+img{
+    height: 90%;
 }
 
 .leftContainer {
@@ -75,7 +83,7 @@ body,html {
 }
 
 .encryptButton {
-    width: 8vw;
+    width: 8rem;
     font-size: 1.2rem;
     border-radius: 5px;
     background-color: #927fbf92;
@@ -92,7 +100,7 @@ body,html {
 
 }
 .decryptButton {
-    width: 8vw;
+    width: 8rem;
     font-size: 1.1rem;
     border-radius: 5px;
     background-color: #C4BBF0;
@@ -102,7 +110,7 @@ body,html {
 }
 
 .copyButton {
-    width: 8vw;
+    width: 8rem;
     font-size: 1.1rem;
     border-radius: 5px;
     background-color: #C4BBF0;
@@ -249,7 +257,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 33vh;
+        height: 30vh;
         width: 100%;
         margin-bottom: 2vh;
         background-color: #FCF7FF;
@@ -267,20 +275,20 @@ textarea {
     }
     
     .encryptButton {
-        width: 9rem;
+        width: 7rem;
         height: 3rem;
         font-size: 1.2rem;        
     }
     
     
     .decryptButton {
-        width: 9rem;
+        width: 7rem;
         height: 3rem;
         font-size: 1.1rem;       
     }
     
     .copyButton {
-        width: 9rem;
+        width: 7rem;
         height: 3rem;
         font-size: 1.1rem;        
     }
@@ -293,7 +301,7 @@ textarea {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: row;
-        height: 33vh;
+        height: 30vh;
         width: 100%;
         margin-bottom: 2vh;
     }
